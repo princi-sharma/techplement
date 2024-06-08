@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <!-- top bar-->
+    <div class="topbar">
+        <div class="logo">
+            <a href="#" class="top-logo">WeatherApp</a>
+            <div class="city" id="city"></div>
+        </div>
+        <div class="search-input">
+            <input type="text" placeholder="Search" id="input-box" class="input-box" autocomplete="off">
+        </div>
+    </div>
+    <!-- nav bar -->
+    <nav class="nav">
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" class="nav-link">TODAY</a></li>
+                <li class="nav-item"><a href="/hourly.html" class="nav-link">HOURLY</a></li>
+                <li class="nav-item"><a href="/daily.html" class="nav-link">DAILY</span></a></li>
+                <li class="nav-item"><a href="/radar.html" class="nav-link">RADAR </a></li>
+                <li class="nav-item"><a href="/minutecast.html" class="nav-link">MINUTECAST</a></li>
+                <li class="nav-item"><a href="/monthly.html" class="nav-link">MONTHLY</a></li>
+                <li class="nav-item"><a href="/airquality.html" class="nav-link">AIR QUALITY </a></li>
+                <li class="nav-item"><a href="/health&activities.html" class="nav-link">HEALTH & ACTIVITIES</a></li>
+                <li class="nav-item"><a href="/forbusiness.html" class="nav-link">FOR BUSINESS</a></li>
+            </ul>
+            <span class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </span>
+        </div>
+    </nav>
+    <!-- mobile nav bar -->
+    <nav class="mobile-nav mobile-nav-hide">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">TODAY</a></li>
+            <li class="mobile-nav-item"><a href="/hourly.html" class="mobile-nav-link">HOURLY</a></li>
+            <li class="mobile-nav-item"><a href="/daily.html" class="mobile-nav-link">DAILY</span></a></li>
+            <li class="mobile-nav-item"><a href="/radar.html" class="mobile-nav-link">RADAR </a></li>
+            <li class="mobile-nav-item"><a href="/minutecast.html" class="mobile-nav-link">MINUTECAST</a></li>
+            <li class="mobile-nav-item"><a href="/monthly.html" class="mobile-nav-link">MONTHLY</a></li>
+            <li class="mobile-nav-item"><a href="/airquality.html" class="mobile-nav-link">AIR QUALITY </a></li>
+            <li class="mobile-nav-item"><a href="/health&activities.html" class="mobile-nav-link">HEALTH & ACTIVITIES</a></li>
+            <li class="mobile-nav-item"><a href="/forbusiness.html" class="mobile-nav-link">FOR BUSINESS</a></li>
+        </ul>
+    </nav>
+    <!-- Weather details -->
+    <div class="app-main">
+            <div class="today-weather">
+                <div class="head">
+                    <p>Today's Weather</p>
+                    <div class="date" id="date"></div>
+                </div>
+                <div class="min-max" id="min-max"></div>
+            </div>
+            <div class="today-weather current-weather">
+                <div class="head">
+                    <p>Current Weather</p>
+                    <div class="time" id="time"></div>
+                </div>
+                <div class="weather-detail">
+                    <div class="temp-detail">
+                        <div class="temp" id="temp"></div>
+                        <div class="description" id="description"></div>
+                        <div class="weather" id="weather"></div>
+                    </div>
+                        <div class="wind-details">
+                        <div class="wind" id="wind"></div>
+                        <div class="wind-gust" id="wind-gust"></div>
+                        <div class="humidity" id="humidity"></div>
+                        <div class="pressure" id="pressure"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer-p">© 2024 WeatherApp, Made by Princi Sharma</p>
+        </footer>
+    <script src="/code.js"></script>
+</body>
+</html>
